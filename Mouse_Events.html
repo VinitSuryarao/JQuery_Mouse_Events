@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {
+            // Click
+            $('div').click(function() {
+               $('div').css("background-color","Orange")
+             });
+             // Double Click
+             $('div').dblclick(function() {
+               $('div').css("background-color","Red")
+             });
+             // Right Click
+             $('div').contextmenu(function() {
+               $('div').css("background-color","Green")
+             });
+             // Mouse Enter
+             $('div').mouseenter(function() {
+               $('div').css("background-color","Yellow")
+             });
+             //Mouse Leave
+             $('div').mouseleave(function() {
+               $('div').css("background-color","Gray")
+             });
+
+         });
+
+     </script>
+<head>
+   <body>
+      <div>
+         <p> This is Mouse Event Programs</p>
+      </div>
+   </body>
+</html>
